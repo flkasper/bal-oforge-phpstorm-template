@@ -1,0 +1,12 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <extensionMap>
+      <mapping pattern=".gitattributes" type="PLAIN_TEXT" />
+      <mapping pattern="shortcode_partner_chat" type="PLAIN_TEXT" />
+      <mapping pattern=".htpasswd" type="PLAIN_TEXT" />
+      <mapping pattern="admin_partnernet_partnerchat" type="PLAIN_TEXT" />
+      <mapping pattern="2do-acfexportdata" type="PLAIN_TEXT" />
+      <mapping ext="webmanifest" type="PLAIN_TEXT" />
+    </extensionMap>
+  </component>
+</application>

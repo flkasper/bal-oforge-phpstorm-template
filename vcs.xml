@@ -1,0 +1,28 @@
+<application>
+  <component name="GitRememberedInputs">
+    <option name="visitedUrls">
+      <list>
+        <UrlAndUserName>
+          <option name="url" value="http://github.com" />
+          <option name="userName" value="fk-7pkonzepte" />
+        </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="http://rs225219.rs.hosteurope.de:255" />
+          <option name="userName" value="fk@7pkonzepte.de" />
+        </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="http://op.7pkonzepte.de" />
+          <option name="userName" value="fk@7pkonzepte.de" />
+        </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://op.7pkonzepte.de/git/nyko.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
+      </list>
+    </option>
+    <option name="cloneParentDir" value="C:\Arbeit\projekte\Kolthof\NyKO" />
+  </component>
+  <component name="Vcs.Log.App.Settings">
+    <option name="SHOW_CHANGES_FROM_PARENTS" value="true" />
+  </component>
+</application>

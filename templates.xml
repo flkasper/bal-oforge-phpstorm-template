@@ -1,0 +1,48 @@
+<application>
+  <component name="TemplateSettings">
+    <option name="deletedKeys">
+      <list>
+        <TemplateKey>
+          <option name="groupName" value="Twig" />
+          <option name="key" value="blk" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Twig" />
+          <option name="key" value="mcr" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Twig" />
+          <option name="key" value="esc" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Twig" />
+          <option name="key" value="emb" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Twig" />
+          <option name="key" value="ext" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Twig" />
+          <option name="key" value="imp" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Twig" />
+          <option name="key" value="inc" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Twig" />
+          <option name="key" value="sbx" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Twig" />
+          <option name="key" value="spl" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Twig" />
+          <option name="key" value="verb" />
+        </TemplateKey>
+      </list>
+    </option>
+  </component>
+</application>

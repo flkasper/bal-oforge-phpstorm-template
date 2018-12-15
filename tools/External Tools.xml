@@ -1,0 +1,16 @@
+<toolSet name="External Tools">
+  <tool name="zip" description="zip src content" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="true" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="C:\Program Files\7-Zip\7z.exe" />
+      <option name="PARAMETERS" value="a $ProjectName$.zip ./src/*" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+  <tool name="Open nodejs prompt" description="Open external nodejs prompt" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
+    <exec>
+      <option name="COMMAND" value="cmd.exe" />
+      <option name="PARAMETERS" value="/C start cmd.exe /K cd \&quot;$FileDir$\&quot; &amp; \&quot;C:\Program Files\nodejs\nodevars.bat\&quot;" />
+      <option name="WORKING_DIRECTORY" value="$FileDir$" />
+    </exec>
+  </tool>
+</toolSet>

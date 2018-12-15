@@ -1,0 +1,53 @@
+<templateSet group="customtemplates">
+  <template name="mailtpl" value="&#10;'mail_$VARIABLE_NR$_h' =&gt; $this-&gt;createMailTemplateHeaderField('mail_$VARIABLE_NR$_h',&#10;    i18n__('$VARIABLE_FIELD$'),&#10;    i18n__('Mail recipient(s): $VARIABLE_MR$')&#10;),&#10;'mail_$VARIABLE_NR$_a' =&gt; $this-&gt;createMailTemplateActivationField(&#10;    'MAILTPL_ACTIVATION_$VARIABLE_ID$',&#10;    i18n__('Activation')&#10;),#MMAILTPL_ACTIVATION_$VARIABLE_ID$&#10;'mail_$VARIABLE_NR$_s' =&gt; $this-&gt;createMailTemplateSubjectField(&#10;    'MAILTPL_SUBJECT_$VARIABLE_ID$',&#10;    i18n__('Subject'),&#10;    i18n__('Data placeholders: desc')&#10;),#MAILTPL_SUBJECT_$VARIABLE_ID$&#10;'mail_$VARIABLE_NR$_b' =&gt; $this-&gt;createMailTemplateBodyField(&#10;    'MAILTPL_BODY_$VARIABLE_ID$',&#10;    i18n__('Body'),&#10;    i18n__('Data placeholders: desc')&#10;),#MAILTPL_BODY_$VARIABLE_ID$&#10;" description="" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="VARIABLE_NR" expression="" defaultValue="00" alwaysStopAt="true" />
+    <variable name="VARIABLE_FIELD" expression="" defaultValue="Fieldname" alwaysStopAt="true" />
+    <variable name="VARIABLE_MR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VARIABLE_ID" expression="" defaultValue="FIELDNAME" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="surround - i18n__" value="i18n__($SELECTION$)" description="Surround with i18n call" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="false" />
+      <option name="PHP Comment" value="false" />
+      <option name="PHP Statement" value="false" />
+    </context>
+  </template>
+  <template name="retnull" value="return null;" description="return null;" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="retstr" value="return '';" description="return '';" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="retarr" value="return [];" description="return empty array;" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="retfalse" value="return false;" description="return false;" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="rettrue" value="return true;" description="return true;" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="function_wrap" value="$METHOD_FIELD$( $SELECTION$ )" description="Function wrap &lt;function&gt;(...)" toReformat="false" toShortenFQNames="true">
+    <variable name="METHOD_FIELD" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="false" />
+      <option name="PHP Comment" value="false" />
+      <option name="PHP Statement" value="false" />
+    </context>
+  </template>
+</templateSet>

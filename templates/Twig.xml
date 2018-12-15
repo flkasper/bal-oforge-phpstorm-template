@@ -1,0 +1,132 @@
+<templateSet group="Twig">
+  <template name="block" value="{% block $NAME$ %}&#10;    $END$&#10;{% endblock %}&#10;" description="block...endblock" toReformat="true" toShortenFQNames="false">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="macro" value="{% macro $NAME$($PARAMETERS$) %}&#10;    $END$&#10;{% endmacro %}&#10;" description="macro...endmacro" toReformat="true" toShortenFQNames="false">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAMETERS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="autoescape" value="{% autoescape $TYPE$ %}&#10;    $END$&#10;{% endautoescape %}&#10;" description="autoescape...endautoescape" toReformat="true" toShortenFQNames="false">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="embed" value="{% embed $TEMPLATE$ %}&#10;    $END$&#10;{% endembed %}&#10;" description="embed 'template'...endembed" toReformat="true" toShortenFQNames="false">
+    <variable name="TEMPLATE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="extends" value="{% extends &quot;$TEMPLATE$&quot; %}&#10;" description="extends &quot;template&quot;" toReformat="true" toShortenFQNames="false">
+    <variable name="TEMPLATE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="import" value="{% import '$TEMPLATE$'$END$ %}" description="import 'template'" toReformat="true" toShortenFQNames="false">
+    <variable name="TEMPLATE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="include" value="{% include '$TEMPLATE$'$END$ %}" description="include 'template'" toReformat="true" toShortenFQNames="false">
+    <variable name="TEMPLATE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="sandbox" value="{% sandbox %}&#10;    $END$&#10;{% endsandbox %}" description="sandbox...endsandbox" toReformat="true" toShortenFQNames="false">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="spaceless" value="{% spaceless %}&#10;    $END$&#10;{% endspaceless %}" description="spaceless...endspaceless" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="verbatim" value="{% verbatim %}&#10;    $END$&#10;{% endverbatim %}" description="verbatim...endverbatim" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="forelse" value="{% for $VAR$ in $SEQUENCE$ %}&#10;    $LINE$&#10;{% else %}&#10;    $END$&#10;{% endfor %}" description="for...in...else...endfor" toReformat="true" toShortenFQNames="false">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SEQUENCE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LINE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="ifelse" value="{% if $CONDITION$ %}&#10;    $LINE$&#10;{% else %}&#10;    $END$&#10;{% endif %}" description="if...else...endif" toReformat="true" toShortenFQNames="false">
+    <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LINE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="elseif" value="{% elseif %}&#10;    $LINE$" description="elseif..." toReformat="true" toShortenFQNames="false">
+    <variable name="LINE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="else" value="{% else %}&#10;    $LINE$" description="else..." toReformat="true" toShortenFQNames="false">
+    <variable name="LINE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="function" value="{{ function('$NAME$') }}" description="function()" toReformat="true" toShortenFQNames="false">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="functionargs" value="{{ function('$NAME$', $ARGS$) }}" description="function(...)" toReformat="true" toShortenFQNames="false">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="shortcode" value="{% filter shortcodes %}&#10;    $END$&#10;{% endfilter %}" description="shortcode...endshortcode" toReformat="true" toShortenFQNames="false">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="surround - theme_i18n__" value="{{ theme_i18n__('$SELECTION$') }}" description="Surround with theme_i18n__ call" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="do_action" value="{% do action('$NAME$') %}" description="do_action cal" toReformat="true" toShortenFQNames="false">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="surround - plugin_i18n__" value="{{ i18n__('$SELECTION$') }}" description="Surround with plugin_i18n__ call" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="debug" value="{{ debug($SELECTION$) }}" description="Surround with debug call" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="set" value="{% set $VAR$ = $END$  %}" description="{% set ... = ... %}" toReformat="true" toShortenFQNames="false">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+</templateSet>

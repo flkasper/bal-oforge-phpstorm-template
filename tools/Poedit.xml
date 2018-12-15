@@ -1,0 +1,16 @@
+<toolSet name="Poedit">
+  <tool name="open" description="Open .po and .pot in Poedit" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="C:\Program Files (x86)\Poedit\Poedit.exe" />
+      <option name="PARAMETERS" value="$FilePath$" />
+      <option name="WORKING_DIRECTORY" value="C:/Program Files (x86)/Poedit" />
+    </exec>
+  </tool>
+  <tool name="po2mo" description="Convert gettext .po files to .mo files." showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="C:\Program Files (x86)\Poedit\GettextTools\bin\msgfmt.exe" />
+      <option name="PARAMETERS" value="-c -o $FileNameWithoutExtension$.mo $FileName$" />
+      <option name="WORKING_DIRECTORY" value="$FileDir$" />
+    </exec>
+  </tool>
+</toolSet>

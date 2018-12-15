@@ -1,0 +1,7 @@
+<templateSet group="WordpressPluginFramework">
+  <template name="mailsyserr" value="$errorMessage = i18n__( 'Errortext' );&#10;$errorData    = [&#10;    'key' =&gt; null,&#10;];&#10;MailSystemError::create( self::class, $this-&gt;pluginCore, $errorMessage, $errorData, true )-&gt;send();" description="MailSystemError" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>

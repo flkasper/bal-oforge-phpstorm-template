@@ -1,0 +1,26 @@
+<application>
+  <component name="ActionMacroManager">
+    <macro name="html - format">
+      <action id="ReformatCode" />
+    </macro>
+    <macro name="html - remove wrapper">
+      <action id="EditorLineStart" />
+      <action id="EditorPageUp" />
+      <action id="EditorPageUp" />
+      <action id="EditorPageUp" />
+      <action id="EditorPageUp" />
+      <action id="EditorPageUp" />
+      <action id="EditorPageUp" />
+      <action id="EditorDeleteLine" />
+      <action id="EditorPageDown" />
+      <action id="EditorPageDown" />
+      <action id="EditorPageDown" />
+      <action id="EditorPageDown" />
+      <action id="EditorPageDown" />
+      <action id="EditorPageDown" />
+      <action id="EditorDeleteLine" />
+      <action id="$SelectAll" />
+      <action id="EditorUnindentSelection" />
+    </macro>
+  </component>
+</application>
